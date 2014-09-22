@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html ng-app="statsModule">
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Stats Counter</title>
@@ -13,8 +13,11 @@
     <script src="~/Scripts/jquery-1.9.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/stats-module.js"></script>
+    @RenderSection("JavascriptInHead", required:false)
+    @*<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>*@
 </head>
-<body>
-    @RenderBody()
-</body>
+    <body>
+        @RenderBody()
+    </body>
 </html>

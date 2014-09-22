@@ -1,0 +1,1 @@
+﻿var statsModule = angular.module("statsModule", []);
